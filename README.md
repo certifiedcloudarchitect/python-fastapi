@@ -22,7 +22,6 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -34,10 +33,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">github-template-repo</h3>
+<h3 align="center">python-fastapi</h3>
 
   <p align="center">
-    A repository template
+    A FastAPI POC
     <br />
     <a href="https://github.com/certifiedcloudarchitect/github-template-repo"><strong>Explore the docs »</strong></a>
     <br />
@@ -93,14 +92,14 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
+* [Python](https://www.python.org/)
+* [FastAPI](https://fastapi.tiangolo.com/)
+* [Starlette](https://www.starlette.io/)
+* [Pydantic](https://pydantic-docs.helpmanual.io/)
+* [SQLAlchemy](https://www.sqlalchemy.org/)
+* [Uvicorn](https://www.uvicorn.org/)
 * [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [Jinja2](https://jinja.palletsprojects.com/en/3.1.x/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -115,26 +114,23 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
+* python
+* https://docs.brew.sh/Homebrew-and-Python
   ```sh
-  npm install npm@latest -g
+  brew install python3
   ```
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Install pyenv and create a virtual environment in the app folder.
+2. Install the python requirements in the virtual environment.
+3. Start the application.
    ```sh
-   git clone https://github.com/certifiedcloudarchitect/github-template-repo.git
+   cd app
+   uvicorn main:app --reload
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+4. Navigate to the login page at http://127.0.0.1:8000/auth/
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
